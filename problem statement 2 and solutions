@@ -1,0 +1,15 @@
+-- Get the films with PG and PG-13 rating using IN operator from film table
+SELECT * from film where rating in ('PG','PG-13');
+
+-- Get the films with length between 50 to 100 using between operator
+select * from film where length Between 50 and 100;
+
+-- Get the top 50 actors using limit operator from actor table
+
+select * from actor where actor_id limit 50;
+
+
+-- Get the distinct film ids from inventory table
+
+select distinct film_id from inventory;
+
