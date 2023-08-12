@@ -1,0 +1,55 @@
+-- Display the count of unique first names of actors from actor table
+select count(distinct first_name) from actor;
+
+-- Display the first 10 records from the customer table
+select * from customer limit 10;
+
+-- Display the first 3 records from the customer table whose first name starts with ‘b’ 
+select * from customer where first_name like 'b%' limit 3;
+
+
+-- Display the names of the first 5 movies which are rated as ‘G’ from film table
+-- Note: Select all the columns while running the query
+select * from film where rating ='G' limit 5;
+
+
+-- Find all customers whose first name starts with "m"
+-- Table name: customer
+select * from customer where first_name like 'm%';
+
+
+-- Find all customers whose first name ends with "a"
+-- Table name: customer
+ select * from customer where first_name like '%a';
+
+
+-- Display the list of the first 4 cities which start and end with ‘a’ from table city
+select * from city where city like 'a%%a' limit 4;
+
+-- Find all customers whose first name have "NI" in any position from the table customer
+select * from customer where first_name like "%NI%";
+
+-- Find all customers whose first name have "r" in the third position from table customer
+
+select * from customer where first_name like "__r%";
+
+
+-- Find names of customers whose first name starts with "L" and ends with "A" from customer table
+select first_name from customer where first_name like 'L%'and first_name like '%a';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
